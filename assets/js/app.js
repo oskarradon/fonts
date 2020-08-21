@@ -145,27 +145,32 @@ function updateUI(i, j) {
   changeColor(colors[j]);
 }
 
+function getNextIndex (index, array) {
+  return (index + 1) % array.length
+}
+
+function getPreviousIndex (index, array) {
+  return index <= 0 ? array.length - 1 : index - 1
+}
+
+let f = Math.floor(Math.random() * fonts.length),
+    c = Math.floor(Math.random() * colors.length);
+
 document.addEventListener("DOMContentLoaded", function(){
-  let fIndex = Math.floor(Math.random() * fonts.length),
-      cIndex = Math.floor(Math.random() * colors.length);
-  updateUI(fIndex, cIndex);
-  console.log(fIndex, cIndex);
-
-  document.getElementById('prev').onclick = function(){
-    fIndex--;
-    cIndex--;
-    updateUI(fIndex, cIndex);
-    console.log(fIndex, cIndex);
-  };
-
-  document.getElementById('next').onclick = function(){
-    fIndex++;
-    cIndex++;
-    updateUI(fIndex, cIndex);
-    console.log(fIndex, cIndex);
-  };
+  updateUI(f, c);
+  console.log(f, c);
 });
 
-// start on random index
+document.getElementById('prev').onclick = function(){
+  f = getPreviousIndex(f, fonts);
+  c = getPreviousIndex(c, colors);
+  updateUI(f, c);
+  console.log(f, c);
+};
 
-// on button click pass next or previous index
+document.getElementById('next').onclick = function(){
+  f = getNextIndex(f, fonts);
+  c = getNextIndex(c, colors);
+  updateUI(f, c);
+  console.log(f, c);
+};

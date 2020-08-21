@@ -51,7 +51,7 @@
 
 @font-face {
   font-family: 'KaeruKaeru';
-  src: url(../../fonts/KaeruKaeru/kaerukaeru-Regular.eot) format('eot'),
+  src: url(../../fonts/KaeruKaeru/kaerukaeru-Regular.eot) format('embedded-opentype'),
   url(../../fonts/KaeruKaeru/kaerukaeru-Regular.woff) format('woff'),
   url(../../fonts/KaeruKaeru/kaerukaeru-Regular.woff2) format('woff2');
 }

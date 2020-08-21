@@ -121,6 +121,13 @@ let fonts = [
     "designers": "Raphael Bastide",
     "foundry": "",
     "year": "2014"
+  },
+  {
+    "name": "Infini",
+    "modifier": "Regular",
+    "designers": "Sandrine Nugue",
+    "foundry": "",
+    "year": "2015"
   }
 ]
 
@@ -158,6 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
   updateUI(f, c);
   prevButton(f, c);
   nextButton(f, c);
+  console.log(f, c);
 });
 
 function getNextIndex (index, array) {
@@ -173,6 +181,8 @@ function prevButton (x, y) {
     x = getPreviousIndex(x, fonts);
     y = getPreviousIndex(y, colors);
     updateUI(x, y);
+    nextButton(x, y);
+    console.log(x, y);
   }
 }
 
@@ -181,5 +191,7 @@ function nextButton (x, y) {
     x = getNextIndex(x, fonts);
     y = getNextIndex(y, colors);
     updateUI(x, y);
+    prevButton(x, y);
+    console.log(x, y);
   }
 }

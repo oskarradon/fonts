@@ -55,6 +55,7 @@ body {
 h1 {
   font-weight: normal;
   max-width: 300px;
+  line-height: 1.2em;
 }
 
 @media (min-width: 800px) {

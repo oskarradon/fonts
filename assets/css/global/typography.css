@@ -82,3 +82,11 @@
   url(../../fonts/WhoIsMono/whois-mono.woff) format('woff'),
   url(../../fonts/WhoIsMono/whois-mono.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'InfiniRegular';
+  src: url(../../fonts/Infini/infini-regular.eot) format('embedded-opentype'),
+  url(../../fonts/Infini/infini-regular.otf) format('opentype'),
+  url(../../fonts/Infini/infini-regular.ttf) format('truetype'),
+  url(../../fonts/Infini/infini-regular.woff) format('woff');
+}

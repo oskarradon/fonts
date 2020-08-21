@@ -89,7 +89,7 @@ function changeFont() {
   name.innerHTML = index.name + " " + index.modifier;
   designers.innerHTML = index.designers;
   year.innerHTML = index.year;
-  src.href = "../fonts/" + index.name.replace(/\s/g,'') + "/" + index.name.replace(/\s/g,'') + ".zip";
+  src.href = "../fonts/assets/fonts/" + index.name.replace(/\s/g,'') + "/" + index.name.replace(/\s/g,'') + ".zip";
 }
 
 function updateUI() {

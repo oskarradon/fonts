@@ -79,6 +79,13 @@ let fonts = [
     "designers": "Steppot",
     "foundry": "lunchtype.com",
     "year": "2016"
+  },
+  {
+    "name": "Apfel Grotezk",
+    "modifier": "Brukt",
+    "designers": "Luigi Gorlero",
+    "foundry": "Collletttivo",
+    "year": "2019"
   }
 ]
 

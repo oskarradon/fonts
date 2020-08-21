@@ -38,7 +38,13 @@
 @font-face {
   font-family: 'Lunchtype25';
   src: url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.woff2) format('woff2'),
-       url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.woff) format('woff'),
-       url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.ttf) format('truetype'),
-       url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.svg#lunchtype25condensed_regular) format('svg');
+  url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.woff) format('woff'),
+  url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.ttf) format('truetype'),
+  url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.svg#lunchtype25condensed_regular) format('svg');
+}
+
+@font-face {
+  font-family: 'ApfelGrotezkBrukt';
+  src: url(../../fonts/ApfelGrotezk/ApfelGrotezk-Brukt.woff) format('woff'),
+  url(../../fonts/ApfelGrotezk/ApfelGrotezk-Brukt.woff2) format('woff2');
 }

@@ -95,3 +95,31 @@ footer div p {
 footer div a:hover {
   text-decoration: none;
 }
+
+#buttons {
+  flex-direction: row;
+  max-width: 250px;
+  margin-top: 30px;
+}
+
+@media (min-width: 800px) {
+  #buttons {
+    max-width: 900px;
+  }
+}
+
+button {
+  border: none;
+  width: 100px;
+  color: white;
+  background: black;
+  border-radius: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: 3px 0;
+  display: inline;
+}
+
+button:hover {
+  cursor: pointer;
+}

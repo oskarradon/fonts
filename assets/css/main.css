@@ -1,0 +1,67 @@
+:root {
+  --padding: 15px;
+}
+
+html, body {
+  height: 100%;
+}
+
+header, footer {
+  position: fixed;
+  width: calc(100vw - (var(--padding) * 2));
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+  top: 50px;
+}
+
+header nav, footer nav {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header nav a, header nav a:visited {
+  color: #000;
+  font-size: 1.5em;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+
+body {
+  background: var(--bg);
+  font-weight: normal;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  height: auto;
+  height: 100vh;
+  width: 100vw;
+  padding: var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+footer {
+  bottom: 50px;
+
+}
+
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

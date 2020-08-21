@@ -93,37 +93,43 @@ let fonts = [
     "designers": "Isabel Motz",
     "foundry": "Velvetyne",
     "year": "2019"
+  },
+  {
+    "name": "Hershey Noailles",
+    "modifier": "Astrology",
+    "designers": "Allen Vincent Hershey",
+    "foundry": "Luuse",
+    "year": "1967"
   }
 ]
 
-function changeColor(i) {
+function changeColor() {
   let main  = document.getElementsByTagName('main')[0],
-      body  = document.getElementsByTagName('body')[0];
-  body.style.backgroundColor = i.bg;
-  main.style.color = i.font;
+      body  = document.getElementsByTagName('body')[0],
+      index = colors[Math.floor(Math.random() * colors.length)];
+  body.style.backgroundColor = index.bg;
+  main.style.color = index.font;
 }
 
-function changeFont(i) {
+function changeFont() {
   let h1        = document.getElementById('text'),
       name      = document.getElementById('name'),
       designers = document.getElementById('designers'),
       foundry   = document.getElementById('foundry'),
       year      = document.getElementById('year'),
-      src       = document.getElementById('source');
+      src       = document.getElementById('source'),
+      index     = fonts[Math.floor(Math.random() * fonts.length)];
 
-  h1.style.fontFamily = i.name.replace(/\s/g,'') + i.modifier.replace(/\s/g,'');
-  name.innerHTML = i.name + " " + i.modifier;
-  designers.innerHTML = i.designers;
-  year.innerHTML = i.year;
-  src.href = "../fonts/assets/zip/" + i.name.replace(/\s/g,'') + ".zip";
+  h1.style.fontFamily = index.name.replace(/\s/g,'') + index.modifier.replace(/\s/g,'');
+  name.innerHTML = index.name + " " + index.modifier;
+  designers.innerHTML = index.designers;
+  year.innerHTML = index.year;
+  src.href = "../fonts/assets/zip/" + index.name.replace(/\s/g,'') + ".zip";
 }
 
 function updateUI() {
-  let randomNumber = Math.floor(Math.random() * colors.length),
-      count        = 0;
-  count = (count + randomNumber) % colors.length;
-  changeColor(colors[count]);
-  changeFont(fonts[count]);
+  changeColor(colors);
+  changeFont(fonts);
 }
 
 document.addEventListener("DOMContentLoaded", function(){

@@ -55,3 +55,12 @@
   url(../../fonts/KaeruKaeru/kaerukaeru-Regular.woff) format('woff'),
   url(../../fonts/KaeruKaeru/kaerukaeru-Regular.woff2) format('woff2');
 }
+
+@font-face {
+  font-family: 'HersheyNoaillesAstrology';
+  src: url(../../fonts/HersheyNoailles/Hershey-Noailles-astrology0.5.eot) format('embedded-opentype'),
+  url(../../fonts/HersheyNoailles/Hershey-Noailles-astrology0.5.otf) format('opentype'),
+  url(../../fonts/HersheyNoailles/Hershey-Noailles-astrology0.5.ttf) format('truetype'),
+  url(../../fonts/HersheyNoailles/Hershey-Noailles-astrology0.5.woff) format('woff'),
+  url(../../fonts/HersheyNoailles/Hershey-Noailles-astrology0.5.woff2) format('woff2');
+}

@@ -85,7 +85,7 @@ function changeFont() {
       src       = document.getElementById('source'),
       index     = fonts[Math.floor(Math.random() * fonts.length)];
 
-  h1.style.fontFamily = index.name.replace(/\s/g,'');
+  h1.style.fontFamily = index.name.replace(/\s/g,'') + index.modifier.replace(/\s/g,'');
   name.innerHTML = index.name + " " + index.modifier;
   designers.innerHTML = index.designers;
   year.innerHTML = index.year;

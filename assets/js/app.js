@@ -72,6 +72,13 @@ let fonts = [
     "designers": "Rory King",
     "foundry": "rorykingetc.com",
     "year": "2018"
+  },
+  {
+    "name": "Lunchtype 25",
+    "modifier": "",
+    "designers": "Steppot",
+    "foundry": "lunchtype.com",
+    "year": "2016"
   }
 ]
 

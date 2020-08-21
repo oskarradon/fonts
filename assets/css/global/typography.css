@@ -19,8 +19,13 @@
 }
 
 @font-face {
-  font-family: 'Iosevka';
+  font-family: 'Iosevka Light Italic';
   src: url(../../fonts/Iosevka/iosevka-lightitalic.ttf) format('truetype'),
   url(../../fonts/Iosevka/iosevka-lightitalic.woff) format('woff'),
   url(../../fonts/Iosevka/iosevka-lightitalic.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'GlyphWorldFlower';
+  src: url(../../fonts/GlyphWorld/GlyphWorld-Flower.otf) format('opentype');
 }

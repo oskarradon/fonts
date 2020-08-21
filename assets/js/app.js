@@ -32,28 +32,39 @@ let colors = [
 
 let fonts = [
   {
-    "name": "Authentic Sans Condensed 60",
+    "name": "Authentic Sans",
+    "modifier": "Condensed 60",
     "designers": "Christina Janus & Desmond Wong",
     "foundry": "Authentic",
     "year": "2015"
   },
   {
-    "name": "Authentic Sans 60",
+    "name": "Authentic Sans",
+    "modifier": "60",
     "designers": "Christina Janus & Desmond Wong",
     "foundry": "Authentic",
     "year": "2015"
   },
   {
     "name": "Stereo Sans",
+    "modifier": "",
     "designers": "Joonas Timmi",
     "foundry": "SUVA Type Foundry",
     "year": "2017"
   },
   {
     "name": "Iosevka",
+    "modifier": "Light Italic",
     "designers": "Belleve Invis",
     "foundry": "Typeof.net",
     "year": "2015"
+  },
+  {
+    "name": "Glyph World",
+    "modifier": "Flower",
+    "designers": "Leah Maldonado",
+    "foundry": "glyphworld.online",
+    "year": "2019"
   }
 ]
 
@@ -66,16 +77,19 @@ function changeColor() {
 }
 
 function changeFont() {
-  let h1     = document.getElementById('text'),
-      name   = document.getElementById('name'),
+  let h1        = document.getElementById('text'),
+      name      = document.getElementById('name'),
       designers = document.getElementById('designers'),
-      foundry = document.getElementById('foundry'),
-      year = document.getElementById('year'),
-      index = fonts[Math.floor(Math.random() * fonts.length)];
+      foundry   = document.getElementById('foundry'),
+      year      = document.getElementById('year'),
+      src       = document.getElementById('source'),
+      index     = fonts[Math.floor(Math.random() * fonts.length)];
+
   h1.style.fontFamily = index.name.replace(/\s/g,'');
-  name.innerHTML = index.name;
+  name.innerHTML = index.name + " " + index.modifier;
   designers.innerHTML = index.designers;
   year.innerHTML = index.year;
+  src.href = "../fonts/" + index.name + ".zip";
 }
 
 function updateUI() {

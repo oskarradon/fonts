@@ -149,7 +149,21 @@ document.addEventListener("DOMContentLoaded", function(){
   let fIndex = Math.floor(Math.random() * fonts.length),
       cIndex = Math.floor(Math.random() * colors.length);
   updateUI(fIndex, cIndex);
-  console.log(fIndex, cIndex)
+  console.log(fIndex, cIndex);
+
+  document.getElementById('prev').onclick = function(){
+    fIndex--;
+    cIndex--;
+    updateUI(fIndex, cIndex);
+    console.log(fIndex, cIndex);
+  };
+
+  document.getElementById('next').onclick = function(){
+    fIndex++;
+    cIndex++;
+    updateUI(fIndex, cIndex);
+    console.log(fIndex, cIndex);
+  };
 });
 
 // start on random index

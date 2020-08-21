@@ -42,6 +42,18 @@ let fonts = [
     "designers": "Christina Janus & Desmond Wong",
     "foundry": "Authentic",
     "year": "2015"
+  },
+  {
+    "name": "Stereo Sans",
+    "designers": "Joonas Timmi",
+    "foundry": "SUVA Type Foundry",
+    "year": "2017"
+  },
+  {
+    "name": "Iosevka",
+    "designers": "Belleve Invis",
+    "foundry": "Typeof.net",
+    "year": "2015"
   }
 ]
 

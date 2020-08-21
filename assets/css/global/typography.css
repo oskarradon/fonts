@@ -11,3 +11,16 @@
   url(../../fonts/AuthenticSans/AUTHENTICSans-60.woff) format('woff'),
   url(../../fonts/AuthenticSans/AUTHENTICSans-60.woff2) format('woff2');
 }
+
+@font-face {
+  font-family: 'StereoSans';
+  src: url(../../fonts/StereoSans/StereoSans.ttf) format('truetype'),
+  url(../../fonts/StereoSans/StereoSans.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url(../../fonts/Iosevka/iosevka-lightitalic.ttf) format('truetype'),
+  url(../../fonts/Iosevka/iosevka-lightitalic.woff) format('woff'),
+  url(../../fonts/Iosevka/iosevka-lightitalic.woff2) format('woff2');
+}

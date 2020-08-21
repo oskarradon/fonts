@@ -145,6 +145,15 @@ function updateUI(i, j) {
   changeColor(colors[j]);
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  let f = Math.floor(Math.random() * fonts.length),
+      c = Math.floor(Math.random() * colors.length);
+  updateUI(f, c);
+  console.log(f, c);
+  prevButton(f, c);
+  nextButton(f, c);
+});
+
 function getNextIndex (index, array) {
   return (index + 1) % array.length
 }
@@ -153,24 +162,20 @@ function getPreviousIndex (index, array) {
   return index <= 0 ? array.length - 1 : index - 1
 }
 
-let f = Math.floor(Math.random() * fonts.length),
-    c = Math.floor(Math.random() * colors.length);
+function prevButton (x, y) {
+  document.getElementById('prev').onclick = function() {
+    x = getPreviousIndex(x, fonts);
+    y = getPreviousIndex(y, colors);
+    updateUI(x, y);
+    console.log(x, y);
+  }
+}
 
-document.addEventListener("DOMContentLoaded", function(){
-  updateUI(f, c);
-  console.log(f, c);
-});
-
-document.getElementById('prev').onclick = function(){
-  f = getPreviousIndex(f, fonts);
-  c = getPreviousIndex(c, colors);
-  updateUI(f, c);
-  console.log(f, c);
-};
-
-document.getElementById('next').onclick = function(){
-  f = getNextIndex(f, fonts);
-  c = getNextIndex(c, colors);
-  updateUI(f, c);
-  console.log(f, c);
-};
+function nextButton (x, y) {
+  document.getElementById('next').onclick = function() {
+    x = getNextIndex(x, fonts);
+    y = getNextIndex(y, colors);
+    updateUI(x, y);
+    console.log(x, y);
+  }
+}

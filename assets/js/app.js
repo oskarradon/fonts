@@ -33,13 +33,6 @@ let colors = [
 let fonts = [
   {
     "name": "Authentic Sans",
-    "modifier": "Condensed 60",
-    "designers": "Christina Janus & Desmond Wong",
-    "foundry": "Authentic",
-    "year": "2015"
-  },
-  {
-    "name": "Authentic Sans",
     "modifier": "60",
     "designers": "Christina Janus & Desmond Wong",
     "foundry": "Authentic",

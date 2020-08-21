@@ -4,3 +4,10 @@
   url(/assets/fonts/AuthenticSans/AUTHENTICSans-Condensed-60.woff) format('woff'),
   url(/assets/fonts/AuthenticSans/AUTHENTICSans-Condensed-60.woff2) format('woff2');
 }
+
+@font-face {
+  font-family: 'AuthenticSans60';
+  src: url(/assets/fonts/AuthenticSans/AUTHENTICSans-60.otf) format('opentype'),
+  url(/assets/fonts/AuthenticSans/AUTHENTICSans-60.woff) format('woff'),
+  url(/assets/fonts/AuthenticSans/AUTHENTICSans-60.woff2) format('woff2');
+}

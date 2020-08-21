@@ -45,7 +45,7 @@ h1 {
 
 @media (min-width: 800px) {
   h1 {
-    font-size: 7.5em;
+    font-size: 5em;
   }
 }
 
@@ -57,7 +57,7 @@ footer div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   font-size: 13px;
 }
 

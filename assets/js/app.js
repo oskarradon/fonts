@@ -35,7 +35,12 @@ let fonts = [
     "name": "Authentic Sans Condensed 60",
     "designers": "Christina Janus & Desmond Wong",
     "foundry": "Authentic",
-    "source": "https://authentic.website/shop.html#sans",
+    "year": "2015"
+  },
+  {
+    "name": "Authentic Sans 60",
+    "designers": "Christina Janus & Desmond Wong",
+    "foundry": "Authentic",
     "year": "2015"
   }
 ]

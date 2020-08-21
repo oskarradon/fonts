@@ -29,3 +29,8 @@
   font-family: 'GlyphWorldFlower';
   src: url(../../fonts/GlyphWorld/GlyphWorld-Flower.otf) format('opentype');
 }
+
+@font-face {
+  font-family: 'WreckageGrotesque';
+  src: url(../../fonts/WreckageGrotesque/Wreckage-GrotesqueOne.otf) format('opentype');
+}

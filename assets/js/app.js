@@ -65,6 +65,13 @@ let fonts = [
     "designers": "Leah Maldonado",
     "foundry": "glyphworld.online",
     "year": "2019"
+  },
+  {
+    "name": "Wreckage Grotesque",
+    "modifier": "",
+    "designers": "Rory King",
+    "foundry": "rorykingetc.com",
+    "year": "2018"
   }
 ]
 

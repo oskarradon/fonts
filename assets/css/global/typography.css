@@ -69,3 +69,9 @@
   font-family: 'WorkSansBlack';
   src: url(../../fonts/WorkSans/WorkSans-Black.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'QuaeriteRegnumDei';
+  src: url(../../fonts/QuaeriteRegnumDei/QuaeriteRegnumDei.otf) format('opentype'),
+  url(../../fonts/QuaeriteRegnumDei/QuaeriteRegnumDei.ttf) format('truetype');
+}

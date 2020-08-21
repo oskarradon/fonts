@@ -107,6 +107,13 @@ let fonts = [
     "designers": "Wei Huang",
     "foundry": "Google Fonts",
     "year": "2015"
+  },
+  {
+    "name": "Quaerite Regnum Dei",
+    "modifier": "",
+    "designers": " 	Fredrick Brennan",
+    "foundry": "",
+    "year": "2019"
   }
 ]
 

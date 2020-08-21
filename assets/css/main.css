@@ -30,16 +30,10 @@ header nav a, header nav a:visited {
 body {
   background: var(--bg);
   font-weight: normal;
-  margin: 0;
+  margin: var(--padding);
   overflow: hidden;
-}
-
-main {
-  height: auto;
-  height: 100vh;
-  width: 100vw;
-  padding: var(--padding);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -56,11 +50,30 @@ h1 {
 
 footer {
   bottom: 50px;
-
 }
 
 footer nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+aside, aside a, aside a:visited {
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+aside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+  font-size: .8rem;
+}
+
+aside p {
+  margin: 0;
+}
+
+aside a:hover {
+  text-decoration: none;
 }

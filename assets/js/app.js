@@ -34,19 +34,24 @@ let fonts = [
 
 function changeColor() {
   let main  = document.getElementsByTagName('main')[0],
+      body  = document.getElementsByTagName('body')[0],
       index = colors[Math.floor(Math.random() * colors.length)];
-  main.style.backgroundColor = index.bg;
+  body.style.backgroundColor = index.bg;
   main.style.color = index.font;
 }
 
 function changeFont() {
   let h1     = document.getElementById('text'),
       name   = document.getElementById('name'),
-      source = document.getElementById('source'),
+      designers = document.getElementById('designers'),
+      foundry = document.getElementById('foundry'),
+      year = document.getElementById('year'),
       index = fonts[Math.floor(Math.random() * fonts.length)];
-  h1.style.fontFamily = index.name;
-  h1.style.fontFamily = "Authentic Sans Condensed 60" // both not working why
-  console.log(index.name)
+  h1.style.fontFamily = index.name.replace(/\s/g,'');
+  name.innerHTML = index.name;
+  designers.innerHTML = index.designers;
+  foundry.innerHTML = index.foundry;
+  year.innerHTML = index.year;
 }
 
 function updateUI() {

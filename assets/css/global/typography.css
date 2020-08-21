@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Authentic Sans Condensed 60';
-  src: url(/assets/fonts/AuthenticSans/AUTHENTICSans-Condensed-60.ttf) format('truetype'),
+  font-family: 'AuthenticSansCondensed60';
+  src: url(/assets/fonts/AuthenticSans/AUTHENTICSans-Condensed-60.otf) format('opentype'),
   url(/assets/fonts/AuthenticSans/AUTHENTICSans-Condensed-60.woff) format('woff'),
   url(/assets/fonts/AuthenticSans/AUTHENTICSans-Condensed-60.woff2) format('woff2');
 }

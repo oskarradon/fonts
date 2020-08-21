@@ -117,10 +117,10 @@ let fonts = [
   }
 ]
 
-
 function changeColor(c) {
   let main  = document.getElementsByTagName('main')[0],
       body  = document.getElementsByTagName('body')[0];
+      
   body.style.backgroundColor = c.bg;
   main.style.color = c.font;
 }
@@ -149,7 +149,6 @@ document.addEventListener("DOMContentLoaded", function() {
   let f = Math.floor(Math.random() * fonts.length),
       c = Math.floor(Math.random() * colors.length);
   updateUI(f, c);
-  console.log(f, c);
   prevButton(f, c);
   nextButton(f, c);
 });
@@ -167,7 +166,6 @@ function prevButton (x, y) {
     x = getPreviousIndex(x, fonts);
     y = getPreviousIndex(y, colors);
     updateUI(x, y);
-    console.log(x, y);
   }
 }
 
@@ -176,6 +174,5 @@ function nextButton (x, y) {
     x = getNextIndex(x, fonts);
     y = getNextIndex(y, colors);
     updateUI(x, y);
-    console.log(x, y);
   }
 }

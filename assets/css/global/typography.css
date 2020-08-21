@@ -64,3 +64,8 @@
   url(../../fonts/HersheyNoailles/Hershey-Noailles-astrology0.5.woff) format('woff'),
   url(../../fonts/HersheyNoailles/Hershey-Noailles-astrology0.5.woff2) format('woff2');
 }
+
+@font-face {
+  font-family: 'WorkSansBlack';
+  src: url(../../fonts/WorkSans/WorkSans-Black.ttf) format('truetype');
+}

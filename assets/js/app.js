@@ -100,6 +100,13 @@ let fonts = [
     "designers": "Allen Vincent Hershey",
     "foundry": "Luuse",
     "year": "1967"
+  },
+  {
+    "name": "Work Sans",
+    "modifier": "Black",
+    "designers": "Wei Huang",
+    "foundry": "Google Fonts",
+    "year": "2015"
   }
 ]
 

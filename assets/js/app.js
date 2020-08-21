@@ -117,35 +117,41 @@ let fonts = [
   }
 ]
 
-function changeColor() {
+
+function changeColor(c) {
   let main  = document.getElementsByTagName('main')[0],
-      body  = document.getElementsByTagName('body')[0],
-      index = colors[Math.floor(Math.random() * colors.length)];
-  body.style.backgroundColor = index.bg;
-  main.style.color = index.font;
+      body  = document.getElementsByTagName('body')[0];
+  body.style.backgroundColor = c.bg;
+  main.style.color = c.font;
 }
 
-function changeFont() {
+function changeFont(f) {
   let h1        = document.getElementById('text'),
       name      = document.getElementById('name'),
       designers = document.getElementById('designers'),
       foundry   = document.getElementById('foundry'),
       year      = document.getElementById('year'),
-      src       = document.getElementById('source'),
-      index     = fonts[Math.floor(Math.random() * fonts.length)];
+      src       = document.getElementById('source');
 
-  h1.style.fontFamily = index.name.replace(/\s/g,'') + index.modifier.replace(/\s/g,'');
-  name.innerHTML = index.name + " " + index.modifier;
-  designers.innerHTML = index.designers;
-  year.innerHTML = index.year;
-  src.href = "../fonts/assets/zip/" + index.name.replace(/\s/g,'') + ".zip";
+  h1.style.fontFamily = f.name.replace(/\s/g,'') + f.modifier.replace(/\s/g,'');
+  name.innerHTML = f.name + " " + f.modifier;
+  designers.innerHTML = f.designers;
+  year.innerHTML = f.year;
+  src.href = "../fonts/assets/zip/" + f.name.replace(/\s/g,'') + ".zip";
 }
 
-function updateUI() {
-  changeColor(colors);
-  changeFont(fonts);
+function updateUI(i, j) {
+  changeFont(fonts[i]);
+  changeColor(colors[j]);
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-  updateUI();
+  let fIndex = Math.floor(Math.random() * fonts.length),
+      cIndex = Math.floor(Math.random() * colors.length);
+  updateUI(fIndex, cIndex);
+  console.log(fIndex, cIndex)
 });
+
+// start on random index
+
+// on button click pass next or previous index

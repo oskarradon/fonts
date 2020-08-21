@@ -48,3 +48,10 @@
   src: url(../../fonts/ApfelGrotezk/ApfelGrotezk-Brukt.woff) format('woff'),
   url(../../fonts/ApfelGrotezk/ApfelGrotezk-Brukt.woff2) format('woff2');
 }
+
+@font-face {
+  font-family: 'KaeruKaeru';
+  src: url(../../fonts/KaeruKaeru/kaerukaeru-Regular.eot) format('eot'),
+  url(../../fonts/KaeruKaeru/kaerukaeru-Regular.woff) format('woff'),
+  url(../../fonts/KaeruKaeru/kaerukaeru-Regular.woff2) format('woff2');
+}

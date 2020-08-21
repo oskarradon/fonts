@@ -86,6 +86,13 @@ let fonts = [
     "designers": "Luigi Gorlero",
     "foundry": "Collletttivo",
     "year": "2019"
+  },
+  {
+    "name": "Kaeru Kaeru",
+    "modifier": "",
+    "designers": "Isabel Motz",
+    "foundry": "Velvetyne",
+    "year": "2019"
   }
 ]
 
@@ -121,14 +128,3 @@ function updateUI() {
 document.addEventListener("DOMContentLoaded", function(){
   updateUI();
 });
-
-// on page load
-  // load random font
-  // random bg and font color
-
-// on button click
-  // load random font
-  // random bg and font color
-
-
-// download zip file of font

@@ -75,3 +75,10 @@
   src: url(../../fonts/QuaeriteRegnumDei/QuaeriteRegnumDei.otf) format('opentype'),
   url(../../fonts/QuaeriteRegnumDei/QuaeriteRegnumDei.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'WhoIsMono';
+  src: url(../../fonts/WhoIsMono/whois-mono.eot) format('embedded-opentype'),
+  url(../../fonts/WhoIsMono/whois-mono.woff) format('woff'),
+  url(../../fonts/WhoIsMono/whois-mono.ttf) format('truetype');
+}

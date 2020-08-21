@@ -114,13 +114,20 @@ let fonts = [
     "designers": " 	Fredrick Brennan",
     "foundry": "",
     "year": "2019"
+  },
+  {
+    "name": "WhoIs Mono",
+    "modifier": "",
+    "designers": "Raphael Bastide",
+    "foundry": "",
+    "year": "2014"
   }
 ]
 
 function changeColor(c) {
   let main  = document.getElementsByTagName('main')[0],
       body  = document.getElementsByTagName('body')[0];
-      
+
   body.style.backgroundColor = c.bg;
   main.style.color = c.font;
 }

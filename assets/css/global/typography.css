@@ -83,3 +83,8 @@
   url(../../fonts/Infini/infini-regular.ttf) format('truetype'),
   url(../../fonts/Infini/infini-regular.woff) format('woff');
 }
+
+@font-face {
+  font-family: 'PassioGraphis';
+  src: url(../../fonts/PassioGraphis/Passio-Graphis.otf) format('opentype');
+}

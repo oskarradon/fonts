@@ -121,6 +121,13 @@ let fonts = [
     "designers": "Sandrine Nugue",
     "foundry": "",
     "year": "2015"
+  },
+  {
+    "name": "Passio Graphis",
+    "modifier": "",
+    "designers": "David Rudnick",
+    "foundry": "",
+    "year": "2019"
   }
 ]
 

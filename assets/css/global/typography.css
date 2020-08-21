@@ -37,10 +37,8 @@
 
 @font-face {
   font-family: 'Lunchtype25';
-  src: url('../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.eot');
-  src: url('../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.woff2') format('woff2'),
-       url('../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.woff') format('woff'),
-       url('../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.ttf') format('truetype'),
-       url('../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.svg#lunchtype25condensed_regular') format('svg');
+  src: url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.woff2) format('woff2'),
+       url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.woff) format('woff'),
+       url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.ttf) format('truetype'),
+       url(../../fonts/Lunchtype25/lunchtype25-regular_condensed-webfont.svg#lunchtype25condensed_regular) format('svg');
 }

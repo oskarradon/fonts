@@ -24,8 +24,7 @@ let colors = [
 
 let fonts = [
   {
-    "name": "Authentic Sans",
-    "info": "Condensed 60",
+    "name": "Authentic Sans Condensed 60",
     "designers": "Christina Janus & Desmond Wong",
     "foundry": "Authentic",
     "source": "https://authentic.website/shop.html#sans",
@@ -43,12 +42,16 @@ function changeColor() {
 function changeFont() {
   let h1     = document.getElementById('text'),
       name   = document.getElementById('name'),
-      source = document.getElementById('source');
+      source = document.getElementById('source'),
+      index = fonts[Math.floor(Math.random() * fonts.length)];
+  h1.style.fontFamily = index.name;
+  h1.style.fontFamily = "Authentic Sans Condensed 60" // both not working why
+  console.log(index.name)
 }
 
 function updateUI() {
   changeColor(colors);
-  // changeFont(fonts);
+  changeFont(fonts);
 }
 
 document.addEventListener("DOMContentLoaded", function(){

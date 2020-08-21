@@ -1,6 +1,5 @@
-:root {
-  --padding: 15px;
-}
+@import "/assets/css/global/vars.css";
+@import "/assets/css/global/typography.css";
 
 html, body {
   height: 100%;

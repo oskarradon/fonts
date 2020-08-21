@@ -15,7 +15,7 @@ header {
   top: 50px;
 }
 
-header nav, footer nav {
+header nav, footer div {
   max-width: 900px;
   margin: 0 auto;
 }
@@ -40,11 +40,12 @@ body {
 
 h1 {
   font-weight: normal;
+  max-width: 900px;
 }
 
 @media (min-width: 800px) {
   h1 {
-    font-size: 3em;
+    font-size: 7.5em;
   }
 }
 
@@ -52,28 +53,30 @@ footer {
   bottom: 50px;
 }
 
-footer nav {
+footer div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center; 
+  font-size: 13px;
 }
 
-aside, aside a, aside a:visited {
+@media (min-width: 800px) {
+  footer div {
+    font-size: 1em;
+    flex-direction: row;
+  }
+}
+
+footer div, footer div a, footer div a:visited {
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-aside {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 0;
-  font-size: .8rem;
-}
-
-aside p {
+footer div p {
   margin: 0;
 }
 
-aside a:hover {
+footer div a:hover {
   text-decoration: none;
 }

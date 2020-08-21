@@ -16,6 +16,14 @@ let colors = [
   {
     "bg": "#8da49d",
     "font": "#4663c6"
+  },
+  {
+    "bg": "#828abb",
+    "font": "#5538b4"
+  },
+  {
+    "bg": "#00469d",
+    "font": "#fed767"
   }
 ]
 
@@ -50,7 +58,6 @@ function changeFont() {
   h1.style.fontFamily = index.name.replace(/\s/g,'');
   name.innerHTML = index.name;
   designers.innerHTML = index.designers;
-  foundry.innerHTML = index.foundry;
   year.innerHTML = index.year;
 }
 

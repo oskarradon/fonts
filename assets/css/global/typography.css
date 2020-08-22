@@ -88,3 +88,11 @@
   font-family: 'PassioGraphis';
   src: url(../../fonts/PassioGraphis/Passio-Graphis.otf) format('opentype');
 }
+
+@font-face {
+  font-family: 'OutwardBlock';
+  src: url(../../fonts/Outward/outward-block-webfont.eot) format('embedded-opentype'),
+  url(../../fonts/Outward/outward-block-webfont.ttf) format('truetype'),
+  url(../../fonts/Outward/outward-block-webfont.woff) format('woff'),
+  url(../../fonts/Outward/outward-block-webfont.woff2) format('woff2');
+}

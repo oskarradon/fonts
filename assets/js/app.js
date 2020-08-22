@@ -1,135 +1,5 @@
-// array of colors
-
-let colors = [
-  {
-    "bg": "#dfffe5",
-    "font": "#fe7f78"
-  },
-  {
-    "bg": "#3c6cdf",
-    "font": "#fe7f78"
-  },
-  {
-    "bg": "#ffb3a1",
-    "font": "#000"
-  },
-  {
-    "bg": "#8da49d",
-    "font": "#4663c6"
-  },
-  {
-    "bg": "#828abb",
-    "font": "#5538b4"
-  },
-  {
-    "bg": "#00469d",
-    "font": "#fed767"
-  }
-]
-
-
-// array of fonts
-
-let fonts = [
-  {
-    "name": "Authentic Sans",
-    "modifier": "60",
-    "designers": "Christina Janus & Desmond Wong",
-    "foundry": "Authentic",
-    "year": "2015"
-  },
-  {
-    "name": "Stereo Sans",
-    "modifier": "",
-    "designers": "Joonas Timmi",
-    "foundry": "SUVA Type Foundry",
-    "year": "2017"
-  },
-  {
-    "name": "Iosevka",
-    "modifier": "Light Italic",
-    "designers": "Belleve Invis",
-    "foundry": "Typeof.net",
-    "year": "2015"
-  },
-  {
-    "name": "Glyph World",
-    "modifier": "Flower",
-    "designers": "Leah Maldonado",
-    "foundry": "glyphworld.online",
-    "year": "2019"
-  },
-  {
-    "name": "Wreckage Grotesque",
-    "modifier": "",
-    "designers": "Rory King",
-    "foundry": "rorykingetc.com",
-    "year": "2018"
-  },
-  {
-    "name": "Lunchtype 25",
-    "modifier": "",
-    "designers": "Steppot",
-    "foundry": "lunchtype.com",
-    "year": "2016"
-  },
-  {
-    "name": "Apfel Grotezk",
-    "modifier": "Brukt",
-    "designers": "Luigi Gorlero",
-    "foundry": "Collletttivo",
-    "year": "2019"
-  },
-  {
-    "name": "Kaeru Kaeru",
-    "modifier": "",
-    "designers": "Isabel Motz",
-    "foundry": "Velvetyne",
-    "year": "2019"
-  },
-  {
-    "name": "Hershey Noailles",
-    "modifier": "Astrology",
-    "designers": "Allen Vincent Hershey",
-    "foundry": "Luuse",
-    "year": "1967"
-  },
-  {
-    "name": "Work Sans",
-    "modifier": "Black",
-    "designers": "Wei Huang",
-    "foundry": "Google Fonts",
-    "year": "2015"
-  },
-  {
-    "name": "Quaerite Regnum Dei",
-    "modifier": "",
-    "designers": " 	Fredrick Brennan",
-    "foundry": "",
-    "year": "2019"
-  },
-  {
-    "name": "WhoIs Mono",
-    "modifier": "",
-    "designers": "Raphael Bastide",
-    "foundry": "",
-    "year": "2014"
-  },
-  {
-    "name": "Infini",
-    "modifier": "Regular",
-    "designers": "Sandrine Nugue",
-    "foundry": "",
-    "year": "2015"
-  },
-  {
-    "name": "Passio Graphis",
-    "modifier": "",
-    "designers": "David Rudnick",
-    "foundry": "",
-    "year": "2019"
-  }
-]
+import {fonts} from './fonts.js';
+import {colors} from './colors.js';
 
 function changeColor(c) {
   let main  = document.getElementsByTagName('main')[0],
@@ -146,12 +16,20 @@ function changeFont(f) {
       foundry   = document.getElementById('foundry'),
       year      = document.getElementById('year'),
       src       = document.getElementById('source');
+  // clear "size" class
+  if (h1.classList[0]) {
+    h1.classList.remove(h1.classList[0]);
+  }
 
   h1.style.fontFamily = f.name.replace(/\s/g,'') + f.modifier.replace(/\s/g,'');
   name.innerHTML = f.name + " " + f.modifier;
   designers.innerHTML = f.designers;
   year.innerHTML = f.year;
   src.href = "../fonts/assets/zip/" + f.name.replace(/\s/g,'') + ".zip";
+  // add "size" class
+  if (f.size) {
+    h1.classList.add(f.size);
+  }
 }
 
 function updateUI(i, j) {
@@ -160,12 +38,12 @@ function updateUI(i, j) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+  // generate starting indices
   let f = Math.floor(Math.random() * fonts.length),
       c = Math.floor(Math.random() * colors.length);
   updateUI(f, c);
   prevButton(f, c);
   nextButton(f, c);
-  console.log(f, c);
 });
 
 function getNextIndex (index, array) {
@@ -182,7 +60,6 @@ function prevButton (x, y) {
     y = getPreviousIndex(y, colors);
     updateUI(x, y);
     nextButton(x, y);
-    console.log(x, y);
   }
 }
 
@@ -192,6 +69,5 @@ function nextButton (x, y) {
     y = getNextIndex(y, colors);
     updateUI(x, y);
     prevButton(x, y);
-    console.log(x, y);
   }
 }
